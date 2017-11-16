@@ -1,0 +1,5 @@
+<h1>상세보기</h1>
+<img height="42" width="42" src="<%= @post.image_url %>"><br>
+<%= @post.story%>
+<%=link_to "[수정]", edit_post_path(@post.id) %>><br>
+<%=link_to "[삭제]", post_path(@post.id), method: "delete" %>

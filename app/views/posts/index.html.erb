@@ -1,0 +1,11 @@
+<h1>Insta</h1></h1>
+<p>Let's Join Insta</p>
+
+<% @posts.each do |p| %>
+<img heigh="100" width="100" src="<%=p.image_url%>">
+<%=link_to "[보기]", "/posts/#{p.id}"%><br>
+<% end %>
+
+<%= link_to "새 포스트", new_post_path%>
+
+<!--<#%=@posts.img_url%>-->

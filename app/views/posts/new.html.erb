@@ -1,0 +1,6 @@
+<h1>새 포스트 만들기</h1>
+<%= form_tag(posts_path, method:"post") do%>
+    Image: <%= text_field_tag :image_url%><br>
+    Stroy: <%= text_field_tag :story%><br>
+    <%=submit_tag "만들기"%>
+<% end %>
